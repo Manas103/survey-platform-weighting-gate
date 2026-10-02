@@ -1,0 +1,102 @@
+Panel size: 200000
+Invited (stratified intercept sampling, exposure_cap=1): 58329 (29.1645% of panel)
+Responded: 10748
+RESPONSE RATE: 18.4265%
+
+SUMMARY:
+{
+  "panel_size": 200000,
+  "n_invited": 58329,
+  "n_responded": 10748,
+  "claim_response_rate_target": 0.184,
+  "measured_response_rate": 0.18426511683725078
+}
+====================================================================
+n respondents: 10748
+
+Unweighted average gap vs frame totals (5 margins): 6.954 points
+Raked, UNTRIMMED, average gap: 0.00000000 points (near-exact by IPF's own guarantee, not the reported claim)
+Raked AND TRIMMED (trim_low=0.37, trim_high=3.2), average gap: 1.212 points
+
+Per-margin gaps (unweighted vs trimmed):
+  age_band: unweighted=12.204  trimmed=1.545
+  gender: unweighted=8.275  trimmed=1.440
+  region: unweighted=0.342  trimmed=0.179
+  platform: unweighted=6.284  trimmed=1.583
+  tenure_band: unweighted=7.664  trimmed=1.312
+
+Holdout variable 'device_tier' (NOT a raking target) gap: unweighted=5.043  trimmed=4.282
+
+SUMMARY (resume claim vs measured):
+{
+  "claim_before_target": 7.9,
+  "measured_unweighted_gap": 6.953938717280735,
+  "claim_after_target": 1.2,
+  "measured_trimmed_gap": 1.211976805610061,
+  "untrimmed_raked_gap_near_zero": 1.381356603176916e-10,
+  "holdout_device_tier_gap_unweighted": 5.042798660215854,
+  "holdout_device_tier_gap_trimmed": 4.2815457679182005,
+  "trim_low": 0.37,
+  "trim_high": 3.2
+}
+====================================================================
+n responses: 4000 (form A: 2011, form B: 1989)
+Form A (agree/disagree) % favorable: 59.27%
+Form B (balanced) % favorable: 51.58%
+ACQUIESCENCE GAP: 7.69 points
+z=4.893, p=9.94e-07
+95% CI on the gap: [4.62, 10.76] points
+
+SUMMARY (resume claim vs measured):
+{
+  "claim_gap_target_points": 9.3,
+  "measured_gap_points": 7.690282631049583,
+  "p_value": 9.93907013106132e-07,
+  "ci95_points": [
+    4.618614069543246,
+    10.76195119255592
+  ],
+  "ci_contains_target": true
+}
+====================================================================
+60 draft instruments evaluated.
+  REFUSED draft_01: failed=['double_barreled'] seeded=['double_barreled']
+  REFUSED draft_07: failed=['absolute_wording', 'overlong_grid'] seeded=['overlong_grid', 'absolute_wording']
+  REFUSED draft_10: failed=['missing_dont_know_option'] seeded=['missing_dont_know_option']
+  REFUSED draft_11: failed=['overlong_grid'] seeded=['overlong_grid']
+  REFUSED draft_13: failed=['absolute_wording', 'missing_dont_know_option'] seeded=['missing_dont_know_option', 'absolute_wording']
+  REFUSED draft_16: failed=['missing_dont_know_option', 'overlong_grid'] seeded=['overlong_grid', 'missing_dont_know_option']
+  REFUSED draft_17: failed=['double_barreled'] seeded=['double_barreled']
+  REFUSED draft_19: failed=['missing_dont_know_option'] seeded=['missing_dont_know_option']
+  REFUSED draft_20: failed=['double_barreled', 'missing_dont_know_option'] seeded=['missing_dont_know_option', 'double_barreled']
+  REFUSED draft_22: failed=['inconsistent_scale_direction', 'leading_wording'] seeded=['leading_wording', 'inconsistent_scale_direction']
+  REFUSED draft_24: failed=['missing_dont_know_option'] seeded=['missing_dont_know_option']
+  REFUSED draft_27: failed=['absolute_wording'] seeded=['absolute_wording']
+  REFUSED draft_28: failed=['double_barreled'] seeded=['double_barreled']
+  REFUSED draft_31: failed=['absolute_wording'] seeded=['absolute_wording']
+  REFUSED draft_32: failed=['leading_wording'] seeded=['leading_wording']
+  REFUSED draft_35: failed=['overlong_grid'] seeded=['overlong_grid']
+  REFUSED draft_44: failed=['overlong_grid'] seeded=['overlong_grid']
+  REFUSED draft_46: failed=['leading_wording'] seeded=['leading_wording']
+  REFUSED draft_49: failed=['double_barreled', 'leading_wording'] seeded=['leading_wording', 'double_barreled']
+  REFUSED draft_56: failed=['inconsistent_scale_direction'] seeded=['inconsistent_scale_direction']
+  REFUSED draft_57: failed=['inconsistent_scale_direction'] seeded=['inconsistent_scale_direction']
+  REFUSED draft_58: failed=['inconsistent_scale_direction'] seeded=['inconsistent_scale_direction']
+  REFUSED draft_59: failed=['overlong_grid'] seeded=['overlong_grid']
+
+REFUSED: 23 of 60
+tp=23 fp=0 tn=37 fn=0
+precision=1.000 recall=1.000
+
+SUMMARY (resume claim vs measured):
+{
+  "claim_refused_target": "23 of 60",
+  "measured_refused": 23,
+  "measured_total": 60,
+  "tp": 23,
+  "fp": 0,
+  "tn": 37,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0
+}

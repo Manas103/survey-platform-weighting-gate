@@ -1,0 +1,40 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.3.2, pluggy-1.6.0 -- C:\Users\Manas\Downloads\Total Job Application process flow\projects\survey-platform-weighting-gate\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Manas\Downloads\Total Job Application process flow\projects\survey-platform-weighting-gate
+configfile: pyproject.toml
+collecting ... collected 31 items
+
+tests/test_instrument_gate.py::test_clean_instrument_passes PASSED       [  3%]
+tests/test_instrument_gate.py::test_double_barreled_is_caught_and_named PASSED [  6%]
+tests/test_instrument_gate.py::test_legitimate_bipolar_or_phrasing_does_not_trip_double_barreled PASSED [  9%]
+tests/test_instrument_gate.py::test_leading_wording_is_caught PASSED     [ 12%]
+tests/test_instrument_gate.py::test_missing_dont_know_is_caught PASSED   [ 16%]
+tests/test_instrument_gate.py::test_overlong_grid_is_caught PASSED       [ 19%]
+tests/test_instrument_gate.py::test_inconsistent_scale_direction_is_caught_at_instrument_level PASSED [ 22%]
+tests/test_instrument_gate.py::test_fixture_generator_produces_reproducible_ground_truth_counts PASSED [ 25%]
+tests/test_instrument_gate.py::test_gate_recovers_exact_ground_truth_on_synthetic_fixtures PASSED [ 29%]
+tests/test_panel.py::test_panel_size PASSED                              [ 32%]
+tests/test_panel.py::test_panel_margins_match_frame_within_sampling_noise PASSED [ 35%]
+tests/test_panel.py::test_device_tier_correlates_with_platform PASSED    [ 38%]
+tests/test_raking.py::test_untrimmed_raking_matches_target_margins_to_convergence_tolerance PASSED [ 41%]
+tests/test_raking.py::test_raking_converges_slowly_on_a_degenerate_empty_joint_cell PASSED [ 45%]
+tests/test_raking.py::test_raking_oracle_against_hand_computed_single_variable_case PASSED [ 48%]
+tests/test_raking.py::test_weights_are_never_negative PASSED             [ 51%]
+tests/test_raking.py::test_trimming_sum_preserving PASSED                [ 54%]
+tests/test_raking.py::test_trimmed_gap_never_better_than_untrimmed_on_targeted_margins PASSED [ 58%]
+tests/test_raking.py::test_tighter_trim_bounds_never_reduce_gap PASSED   [ 61%]
+tests/test_response.py::test_only_invited_can_respond PASSED             [ 64%]
+tests/test_response.py::test_older_age_band_responds_more_than_youngest PASSED [ 67%]
+tests/test_response.py::test_response_rate_is_between_zero_and_one PASSED [ 70%]
+tests/test_sampling.py::test_exposure_cap_bounds_invite_count PASSED     [ 74%]
+tests/test_sampling.py::test_invited_implies_at_least_one_trigger PASSED [ 77%]
+tests/test_sampling.py::test_more_sessions_means_higher_invite_rate PASSED [ 80%]
+tests/test_split_ballot.py::test_random_assignment_balances_true_favorability PASSED [ 83%]
+tests/test_split_ballot.py::test_form_b_observed_equals_true_favorable_exactly PASSED [ 87%]
+tests/test_split_ballot.py::test_form_a_never_flips_a_favorable_response_to_unfavorable PASSED [ 90%]
+tests/test_split_ballot.py::test_zero_lift_gives_zero_expected_gap PASSED [ 93%]
+tests/test_split_ballot.py::test_larger_lift_produces_larger_measured_gap PASSED [ 96%]
+tests/test_split_ballot.py::test_gap_statistic_matches_hand_computed_z_test_oracle PASSED [100%]
+
+============================= 31 passed in 1.63s ==============================
